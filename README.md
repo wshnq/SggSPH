@@ -40,3 +40,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 <!-- 安装mock.js模拟数据 -->
 <!-- cnpm install --save mockjs -->
+
+<!-- 安装swiper组件 -->
+<!-- cnpm install --save swiper@5 -->

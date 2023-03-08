@@ -131,8 +131,6 @@ export default {
           // 整理参数
           location.query = query;
           // 路由跳转
-          console.log(location);
-          // debugger
           this.$router.push(location);
         }
       }
@@ -162,7 +160,7 @@ export default {
     ...mapState({
       // 右侧需要的是一个函数，当使用这个计算属性的时候，右侧的函数会立即执行一次
       // 会注入一个参数state，state其实就是大仓库的数据
-      categoryList: state => state.home.categoryList
+      categoryList: (state) => state.home.categoryList,
     }),
   },
 };

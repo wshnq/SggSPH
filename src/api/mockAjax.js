@@ -6,11 +6,7 @@ import nprogress from "nprogress"
 // 引入进度条的样式
 import "nprogress/nprogress.css"
 
-// 1.利用axios对象的方法create，创建一个axios实例
-// 2.requests就是axios，只是稍微配置一下
 const requests = axios.create({
-    // 配置对象
-    // 基础路径，发请求的时候，路径会出现api
     bestURL:'/mock',
     // 请求超时时间
     timeout:5000

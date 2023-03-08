@@ -68,7 +68,6 @@ export default {
       // 第二种：模板字符串
       // this.$router.push(`/search/${this.keyword}?k=${this.keyword.toUpperCase()}`)
       // 常用写法（第三种）:
-
       if (this.$route.query) {
         // 加上undefined可以解决传递的为空值
         let location = {
@@ -79,7 +78,13 @@ export default {
         this.$router.push(location);
       }
     }
-  }
+  },
+  mounted() {
+    // 通过全局事件总线清除关键字
+    this.$bus.$on('clear',()=>{
+      this.keyword=''
+    })
+  },
 };
 </script>
 
